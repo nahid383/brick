@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick Breaker Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>🧱 Brick Breaker</h1>
+            <div class="score-lives">
+                <div>Score: <span id="score">0</span></div>
+                <div>Lives: <span id="lives">3</span></div>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <div class="controls">
+            Use ← → arrow keys or mouse to move paddle • Press SPACE to start
+        </div>
+        
+        <div class="game-over" id="gameOver">
+            <h2 id="gameOverTitle">Game Over!</h2>
+            <p id="finalScore">Final Score: 0</p>
+            <button class="restart-btn" onclick="restartGame()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
